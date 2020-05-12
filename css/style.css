@@ -18,7 +18,7 @@ main {
 footer {
   height: 100px;
   background-color: #282828;
-  z-index: 99;
+  position: sticky;
 }
 
 .wrapper {
@@ -31,18 +31,22 @@ footer {
   background-color: black;
   width: 230px;
   height: 100%;
-  padding: 0 10px;
   position: relative;
 }
+.nav .nav-top {
+  padding: 0 10px;
+  height: calc(100vh - 150px);
+}
+
 .nav .account {
-  background-color: black;
+  width: 100%;
+  background-color: pink;
   text-align: center;
-  position: fixed;
-  width: 208px;
-  bottom: calc(0vh + 100px);
+  height: 50px;
+
 }
 .nav .playlist {
-  background-color: pink;
+  /* background-color: pink; */
   overflow-y: auto;
   height: 60%;
 }
