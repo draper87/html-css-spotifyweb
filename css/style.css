@@ -6,10 +6,10 @@
 }
 
 
-/* [class*='col'] {
+[class*='col'] {
   background-color: pink;
   border: 1px solid red;
-} */
+}
 
 main {
   background-color: #141922;
@@ -30,6 +30,17 @@ footer {
   background-color: black;
   width: 230px;
   height: 100%;
+  padding: 0 10px;
+  position: relative;
+}
+.nav .account {
+  text-align: center;
+  position: fixed;
+  bottom: calc(0vh + 100px);
+}
+.nav .playlist {
+  overflow-y: auto;
+  height: 200px;
 }
 .music {
   width: calc(100% - 230px);
