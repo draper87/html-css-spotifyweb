@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+
+/* [class*='col'] {
+  background-color: pink;
+  border: 1px solid red;
+} */
+
+main {
+  background-color: #141922;
+}
+
+footer {
+  height: 100px;
+  background-color: #282828;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+
+.nav {
+  background-color: black;
+  width: 230px;
+  height: 100%;
+}
+.music {
+  width: calc(100% - 230px);
+  height: 100%;
+  overflow-y: auto;
+}
+.content {
+  position: relative;
+}
+.upgrade {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: calc(100% - 230px);
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+}
+.upgrade1 {
+  margin-right: 20px;
+  padding: 10px 25px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.album {
+  margin-top: 100px;
+  display: block;
+
+}
+.album ul li {
+  display: inline-block;
+  list-style: none;
+}
