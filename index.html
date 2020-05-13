@@ -16,16 +16,24 @@
         <!-- Barra di navigazione -->
         <div class="col nav">
           <div class="nav-top">
-            <div class="col logo">
+            <div class="col logo hidden-xs">
               <img src="img/logo.svg" alt="logo">
             </div>
-            <ul class="nav-home">
+            <div class="col logoxs hidden-sm hidden-md hidden-lg">
+              <img src="img/logo-small.svg" alt="logosmall">
+            </div>
+            <ul class="nav-home hidden-xs">
               <li><img src="img/home.svg" alt="home"> Home</li>
               <li><img src="img/search.svg" alt="search"> Cerca</li>
               <li><img src="img/libreria.svg" alt="libreria"> La tua libreria</li>
             </ul>
-            <h3>PLAYLIST</h3>
-            <ul class="playlist">
+            <ul class="nav-home hidden-sm hidden-md hidden-lg">
+              <li><img src="img/home.svg" alt="home"></li>
+              <li><img src="img/search.svg" alt="search"></li>
+              <li><img src="img/libreria.svg" alt="libreria"></li>
+            </ul>
+            <h3 class="hidden-xs">PLAYLIST</h3>
+            <ul class="playlist hidden-xs">
               <li><i class="fas fa-plus"></i> Crea Playlist</li>
               <li>Nome Playlist</li>
               <li>Nome Playlist</li>
@@ -38,10 +46,14 @@
             </ul>
           </div>
           <div class="nav-bottom">
-            <div class="col account">
+            <div class="col account hidden-xs">
               <p><i class="far fa-arrow-alt-circle-down"></i> Installa app</p>
               <hr>
               <p><img src="img/profile.svg" alt="profile"> &nbsp; John Doe</p>
+            </div>
+            <div class="col account-small hidden-sm hidden-md hidden-lg">
+              <p><i class="far fa-arrow-alt-circle-down"></i></p>
+              <img src="img/profile.svg" alt="profile">
             </div>
           </div>
         </div>
@@ -67,7 +79,7 @@
 
               <div class="col played">
                 <h2>Recently Played</h2>
-                <div class="album-list flex">
+                <div class="col album-list flex">
                   <div class="col block">
                     <div class="col block-image">
                       <div class="darken">
