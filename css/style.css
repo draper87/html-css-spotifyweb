@@ -5,6 +5,7 @@
   box-sizing: border-box;
   color: white;
   list-style: none;
+  font-family: 'Roboto';
 }
 
 .image img {
@@ -19,18 +20,22 @@
   display: flex;
 }
 
-[class*='col'] {
+h2 {
+  padding: 20px 8px;
+}
+
+/* [class*='col'] {
   background-color: pink;
   border: 1px solid red;
-}
+} */
 
 /* MAIN */
 main {
   background-color: #141922;
 }
 
-.wrapper {
-  width: 100vw;
+main .wrapper {
+  width: 100%;
   height: calc(100vh - 100px);
 }
 
@@ -39,16 +44,17 @@ main {
   background-color: black;
   width: 230px;
   height: 100%;
-  position: relative;
 }
 .nav .nav-top {
   height: calc(100vh - 150px);
   overflow: hidden;
 }
+.nav .logo {
+  padding: 10px 15px;
+}
 .nav .nav-home {
   padding: 10px 0;
 }
-
 .nav ul li {
   font-size: 16px;
   padding: 3px 15px;
@@ -104,7 +110,7 @@ main {
   top: 0;
 }
 .upgrade {
-  margin-right: 20px;
+  margin-right: 35px;
   padding: 10px 25px;
   border: 1px solid white;
   border-radius: 20px;
@@ -112,11 +118,35 @@ main {
 .album {
   margin-top: 100px;
   display: block;
-
+  padding: 0 10px;
+}
+.album ul {
+  padding: 10px 0;
 }
 .album ul li {
   display: inline-block;
   list-style: none;
+}
+.album .played .album-list.flex {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.album .played .album-list.flex .block {
+  flex-basis: 16%;
+  text-align: center;
+  padding: 8px;
+}
+.block-image img{
+  width: 100%;
+}
+.radius {
+  border-radius: 50%;
+}
+.mainview p {
+  padding: 5px 8px 20px 8px;
+}
+.mainview h3 {
+  padding-top: 10px;
 }
 
 /* Footer */
