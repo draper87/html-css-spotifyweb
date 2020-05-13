@@ -2,26 +2,30 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify Web</title>
   </head>
   <body>
 
+    <!-- Main -->
     <main>
-      <div class="col wrapper">
+      <div class="col wrapper flex">
+
+        <!-- Barra di navigazione -->
         <div class="col nav">
           <div class="nav-top">
             <div class="col logo">
-              <img src="img/logo.svg" alt="">
+              <img src="img/logo.svg" alt="logo">
             </div>
-            <ul>
-              <li>Home</li>
-              <li>Cerca</li>
-              <li>La tua libreria</li>
+            <ul class="nav-home">
+              <li><img src="img/home.svg" alt="home"> Home</li>
+              <li><img src="img/search.svg" alt="search"> Cerca</li>
+              <li><img src="img/libreria.svg" alt="libreria"> La tua libreria</li>
             </ul>
             <h3>Playlist</h3>
             <ul class="playlist">
-              <li>Crea Playlist</li>
+              <li><i class="fas fa-plus"></i> Crea Playlist</li>
               <li>Nome Playlist</li>
               <li>Nome Playlist</li>
               <li>Nome Playlist</li>
@@ -45,11 +49,13 @@
             </div>
           </div>
         </div>
-        
-        <div class="col music">
+        <!-- Fine Barra di navigazione -->
+
+        <!-- Schermata principale -->
+        <div class="col mainview">
           <div class="col content">
-            <div class="col upgrade">
-              <div class="col upgrade1">
+            <div class="col topbar flex">
+              <div class="col upgrade">
                 EFFETTUA L UPGRADE
               </div>
             </div>
@@ -149,12 +155,49 @@
           </div>
           </div>
         </div>
+        <!-- Fine Schermata principale -->
+
       </div>
     </main>
+    <!-- Fine Main -->
 
+    <!-- Footer -->
     <footer>
-
+      <div class="player flex">
+        <div class="col element left flex">
+          <div class="image">
+            <img src="img/sinister.jpeg" alt="sinister">
+          </div>
+          <ul>
+            <li>Sinister</li>
+            <li>Brano nome</li>
+          </ul>
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
+        </div>
+        <div class="col element center flex middle">
+          <div class="col player-button">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo-alt"></i>
+          </div>
+          <div class="col player-bar">
+            <span>0:00</span>
+            <span>lorem</span>
+            <span>10:00</span>
+          </div>
+        </div>
+        <div class="col element flex right">
+          <i class="fas fa-list"></i>
+          <i class="fas fa-desktop"></i>
+          <i class="fas fa-volume-up"></i>
+          <span>lorem</span>
+        </div>
+      </div>
     </footer>
+    <!-- Fine Footer -->
 
   </body>
 </html>

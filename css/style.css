@@ -1,32 +1,40 @@
+/* REGOLE RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: white;
+  list-style: none;
 }
 
+.image img {
+  height: 100%;
+}
 
-/* [class*='col'] {
+.center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+[class*='col'] {
   background-color: pink;
   border: 1px solid red;
-} */
+}
 
+/* MAIN */
 main {
   background-color: #141922;
 }
 
-footer {
-  height: 100px;
-  background-color: #282828;
-  position: sticky;
-}
-
 .wrapper {
-  display: flex;
   width: 100vw;
   height: calc(100vh - 100px);
 }
 
+/* Barra di navigazione */
 .nav {
   background-color: black;
   width: 230px;
@@ -34,23 +42,51 @@ footer {
   position: relative;
 }
 .nav .nav-top {
-  padding: 0 10px;
   height: calc(100vh - 150px);
+  overflow: hidden;
+}
+.nav .nav-home {
+  padding: 10px 0;
 }
 
+.nav ul li {
+  font-size: 16px;
+  padding: 3px 15px;
+}
+.nav h3 {
+  padding: 0 17px;
+}
+.nav i {
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+.nav ul li img {
+  width: 25px;
+  vertical-align: middle;
+}
+.nav .nav-top .nav-home li:first-child {
+  border-left: 2px solid green;
+}
+.nav .nav-top .nav-home li:not(first-child) {
+  border-left: 2px solid black;
+}
+.nav .nav-top .playlist li {
+  border-left: 2px solid black;
+}
+.nav .nav-bottom {
+}
 .nav .account {
   width: 100%;
-  background-color: pink;
   text-align: center;
   height: 50px;
-
 }
 .nav .playlist {
-  /* background-color: pink; */
   overflow-y: auto;
   height: 60%;
 }
-.music {
+/* Schermata principale */
+.mainview {
   width: calc(100% - 230px);
   height: 100%;
   overflow-y: auto;
@@ -58,8 +94,7 @@ footer {
 .content {
   position: relative;
 }
-.upgrade {
-  display: flex;
+.topbar {
   justify-content: flex-end;
   align-items: center;
   width: calc(100% - 230px);
@@ -68,7 +103,7 @@ footer {
   position: fixed;
   top: 0;
 }
-.upgrade1 {
+.upgrade {
   margin-right: 20px;
   padding: 10px 25px;
   border: 1px solid white;
@@ -82,4 +117,42 @@ footer {
 .album ul li {
   display: inline-block;
   list-style: none;
+}
+
+/* Footer */
+footer {
+  height: 100px;
+  background-color: #282828;
+  position: sticky;
+}
+footer .player {
+  justify-content: space-between;
+}
+footer .player .element {
+  flex-basis: 30%;
+  height: 100px;
+}
+
+footer .player .element .image {
+  height: 100px;
+  padding: 15px;
+}
+footer .player .element.flex.middle {
+  flex-direction: column;
+  justify-content: center;
+}
+footer .player .element.flex.right {
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 8;
+}
+footer .player .element.flex.left {
+  align-items: center;
+  flex-grow: 8;
+}
+footer ul {
+  padding-right: 20px;
+}
+footer ul li:first-child {
+  font-weight: bold;
 }
