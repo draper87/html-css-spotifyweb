@@ -153,6 +153,7 @@ main .wrapper {
 }
 .album ul {
   padding: 10px 0;
+  position: relative;
 }
 .album ul li {
   display: inline-block;
@@ -161,7 +162,14 @@ main .wrapper {
   font-weight: bold;
   padding: 0 5px;
 }
-
+.album ul li:first-child:after {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: #adff2f;
+  width: 40px;
+  margin: 5px auto;
+}
 .album p {
   color: #787a7f;
 }
@@ -239,11 +247,56 @@ footer ul {
 footer ul li:first-child {
   font-weight: bold;
 }
-.player-bar span:nth-child(2)::after {
+footer .player-bar .progress-bar {
+  display: inline-block;
+  background-color: #5a5a5a;
+  height: 4px;
+  width: calc(100% - 80px);
+  vertical-align: middle;
+  border-radius: 15px;
+  margin: 0 5px;
+}
+footer .player-bar .progress-bar .progress-bar-short {
+  display: block;
+  background-color: #c1c1c1;
+  height: 4px;
+  width: 25%;
+  border-radius: 15px;
+}
+footer .player-bar .progress-bar .progress-bar-short:after {
   content: '';
-  color: red;
-  height: 1px;
-  width: 100px;
+  display: block;
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 100%;
+}
+/* footer .player-bar .circle {
+  display: block;
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 100%;
+  vertical-align: middle;
+} */
+footer .volume {
+  display: inline-block;
+  background-color: #5a5a5a;
+  height: 4px;
+  width: 30%;
+  vertical-align: middle;
+  border-radius: 15px;
+  margin: 0 5px;
+}
+
+footer .volume .volume-up {
+  display: block;
+  background-color: #c1c1c1;
+  height: 4px;
+  width: 25%;
+  border-radius: 15px;
 }
 
 .player-button {
@@ -269,9 +322,11 @@ ul li:hover {
 footer .player .element.flex.left li:last-child:hover {
   color: white;
   text-decoration: underline;
+  cursor: pointer;
 }
 footer .player .element.flex.left i:hover {
   color: white;
+  cursor: pointer;
 }
 .account p:hover {
   color: white;
