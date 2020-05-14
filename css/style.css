@@ -57,6 +57,9 @@ main .wrapper {
 .nav .nav-home {
   padding: 10px 0;
 }
+.nav .nav-home li:first-child {
+  color: white;
+}
 .nav ul li {
   font-size: 16px;
   padding: 3px 15px;
@@ -66,7 +69,7 @@ main .wrapper {
   padding: 0 0 15px 19px;
 }
 .nav i {
-  background-color: white;
+  background-color: #787a7f;
   color: black;
   padding: 10px;
 }
@@ -100,6 +103,9 @@ main .wrapper {
   width: 90%;
   height: 50px;
   margin: 0 auto;
+}
+.nav .account p, .nav .account i {
+  color: #787a7f;
 }
 .nav .account-small {
   text-align: center;
@@ -217,18 +223,29 @@ footer .player .element.flex.left {
   align-items: center;
   flex-grow: 8;
 }
+footer .player .element.flex.left li:last-child {
+  color: #787a7f;
+}
+footer .player .element.flex.left i {
+  color: #787a7f;
+}
+footer .player .element.flex.right i,
+footer .player .element.flex.left i {
+  padding: 0 5px;
+}
 footer ul {
   padding-right: 20px;
 }
 footer ul li:first-child {
   font-weight: bold;
 }
-.player-bar span:nth-child(2):after {
+.player-bar span:nth-child(2)::after {
   content: '';
   color: red;
   height: 1px;
   width: 100px;
 }
+
 .player-button {
   padding-bottom: 30px;
   align-items: center;
@@ -246,7 +263,20 @@ ul li:hover {
   color: white;
   cursor: pointer;
 }
-
+.nav .playlist li:first-child:hover i {
+  background-color: white;
+}
+footer .player .element.flex.left li:last-child:hover {
+  color: white;
+  text-decoration: underline;
+}
+footer .player .element.flex.left i:hover {
+  color: white;
+}
+.account p:hover {
+  color: white;
+  cursor: pointer;
+}
 .darken {
   width: 100%;
   height: 100%;
