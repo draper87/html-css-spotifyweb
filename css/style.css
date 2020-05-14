@@ -102,6 +102,9 @@ main .wrapper {
   height: 50px;
   margin: 0 auto;
 }
+.nav .account hr {
+  border: 0.5px solid grey;
+}
 .nav .account p, .nav .account i {
   color: #787a7f;
 }
@@ -407,6 +410,18 @@ footer .volume .volume-up:hover:after {
   .album .played .album-list.flex .block {
     flex-basis: 50%;
   }
+  footer .player-image {
+    height: 70px;
+    padding: 5px;
+  }
+  footer .element.left {
+    font-size: 12px;
+  }
+  .player-button i {
+    padding: 0 5px;
+  }
+
+
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .hidden-sm {
@@ -414,6 +429,13 @@ footer .volume .volume-up:hover:after {
   }
   .album .played .album-list.flex .block {
     flex-basis: 50%;
+  }
+  .player-button i {
+    padding: 0 10px;
+  }
+  footer .player-image {
+    height: 70px;
+    padding: 5px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
