@@ -99,7 +99,7 @@ main .wrapper {
   color: white;
 }
 .nav .nav-bottom p:last-child {
-  padding: 5px 6px;
+  padding: 7px 8px;
   color: white;
 }
 .nav .nav-bottom img {
@@ -164,7 +164,6 @@ main .wrapper {
 }
 .album ul li {
   display: inline-block;
-  /* color: #787a7f; */
   font-weight: bold;
   padding: 0 5px;
 }
