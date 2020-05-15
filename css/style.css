@@ -44,6 +44,7 @@ main .wrapper {
   width: 230px;
   height: 100%;
 }
+/* Sezione Nav-top */
 .nav .nav-top {
   height: calc(100vh - 180px);
   overflow: hidden;
@@ -59,13 +60,22 @@ main .wrapper {
 .nav .nav-home {
   padding: 10px 0;
 }
-.nav .nav-home li:first-child {
-  color: white;
-}
 .nav ul li {
   font-size: 16px;
   padding: 3px 15px;
-  /* color: #787a7f; */
+}
+.nav ul li img {
+  width: 25px;
+  vertical-align: middle;
+}
+.nav .nav-home li:first-child {
+  color: white;
+}
+.nav .nav-home li:first-child {
+  border-left: 4px solid #adff2f;
+}
+.nav .nav-home li:not(first-child) {
+  border-left: 4px solid black;
 }
 .nav h3 {
   padding: 0 0 15px 19px;
@@ -75,25 +85,22 @@ main .wrapper {
   color: black;
   padding: 10px;
 }
-.nav ul li img {
-  width: 25px;
-  vertical-align: middle;
+.nav .playlist {
+  overflow-y: auto;
+  height: 60%;
 }
-.nav .nav-top .nav-home li:first-child {
-  border-left: 4px solid #adff2f;
-}
-.nav .nav-top .nav-home li:not(first-child) {
+.nav .playlist li {
   border-left: 4px solid black;
+  padding-bottom: 15px;
 }
-.nav .nav-top .playlist li {
-  border-left: 4px solid black;
-}
+/* Sezione Nav-bottom */
 .nav .nav-bottom i {
   background-color: black;
   color: white;
 }
 .nav .nav-bottom p:last-child {
   padding: 5px 6px;
+  color: white;
 }
 .nav .nav-bottom img {
   width: 20px;
@@ -107,17 +114,10 @@ main .wrapper {
   margin: 0 auto;
 }
 .nav .account hr {
-  border: 0.5px solid grey;
+  border: 0.5px solid #787a7f;
 }
 .nav .account p, .nav .account i {
   color: #787a7f;
-}
-.nav .playlist {
-  overflow-y: auto;
-  height: 60%;
-}
-.nav .playlist li {
-  padding-bottom: 15px;
 }
 
 /* Schermata principale */
